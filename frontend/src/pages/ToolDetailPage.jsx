@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { getTool } from '../api'
+import ToolLogo from '../components/ToolLogo'
 
 export default function ToolDetailPage() {
   const { slug } = useParams()
@@ -31,8 +32,8 @@ export default function ToolDetailPage() {
         </Link>
 
         <div className="flex items-center gap-5 mt-6 mb-6">
-          <div className="w-16 h-16 rounded-2xl atlas-ring active bg-surface-2 flex items-center justify-center font-display text-2xl font-semibold text-accent">
-            {tool.name[0]}
+          <div className="w-16 h-16 rounded-2xl atlas-ring active bg-surface-2 flex items-center justify-center overflow-hidden">
+            <ToolLogo name={tool.name} websiteUrl={tool.website_url} />
           </div>
           <div>
             <h1 className="font-display text-3xl font-semibold tracking-tight">{tool.name}</h1>
@@ -56,9 +57,9 @@ export default function ToolDetailPage() {
           </span>
         </div>
 
-       {tool.website_url && (
-  
-        <a href={tool.website_url}
+        {tool.website_url && (
+          
+            <a href={tool.website_url}
             target="_blank"
             rel="noreferrer"
             className="inline-block bg-accent hover:bg-accent-dim transition px-6 py-3 rounded-xl font-medium text-sm mb-12"
