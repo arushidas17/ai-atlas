@@ -27,12 +27,12 @@ export default function ToolsListPage() {
           <div className="w-8 h-8 rounded-full atlas-ring active bg-surface-2 flex items-center justify-center">
             <div className="w-2 h-2 rounded-full bg-accent" />
           </div>
-          <span className="font-display font-semibold tracking-tight text-lg">AI Atlas</span>
+          <span className="font-display font-semibold tracking-tight text-lg">AI Tools</span>
         </div>
       </header>
 
       <div className="max-w-7xl mx-auto px-6 py-14">
-        <p className="font-mono text-xs uppercase tracking-widest text-accent mb-3">AI Atlas · {tools.length || '—'} tools</p>
+        <p className="font-mono text-xs uppercase tracking-widest text-accent mb-3">AI Tools · {tools.length || '—'} tools</p>
         <h1 className="font-display text-4xl sm:text-5xl font-semibold tracking-tight mb-3">
           Find your next AI tool.
         </h1>

@@ -28,8 +28,8 @@ export default function ToolDetailPage() {
     <div className="min-h-screen bg-bg text-ink">
       <div className="max-w-4xl mx-auto px-6 py-12">
         <Link to="/" className="font-mono text-xs text-ink-faint hover:text-accent transition">
-          ← back to AI Atlas
-        </Link>
+  ← back to AI Tools
+</Link>
 
         <div className="flex items-center gap-5 mt-6 mb-6">
           <div className="w-16 h-16 rounded-2xl atlas-ring active bg-surface-2 flex items-center justify-center overflow-hidden">
