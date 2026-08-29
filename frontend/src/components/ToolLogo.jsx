@@ -16,7 +16,7 @@ export default function ToolLogo({ name, websiteUrl }) {
 
   return (
     <img
-      src={`https://logo.clearbit.com/${domain}`}
+      src={`https://www.google.com/s2/favicons?sz=128&domain=${domain}`}
       alt={`${name} logo`}
       onError={() => setFailed(true)}
       className="w-full h-full object-contain rounded-xl p-1.5"
